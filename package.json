@@ -1,0 +1,27 @@
+{
+  "name": "express-server-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:api",
+    "start:api": "nodemon --watch ./api --exec \"babel-node --inspect --presets=@babel/env ./api/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.9.13",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "graphql-passport": "^0.5.0",
+    "nodemon": "^2.0.1",
+    "passport": "^0.4.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4"
+  }
+}
