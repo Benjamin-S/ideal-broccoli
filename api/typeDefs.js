@@ -13,7 +13,13 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    logout: Boolean
+    logout: Boolean,
+    login(email: String!, password: String!): AuthPayload,
+    signup(firstName: String!, lastName: String!, email: String!, password: String!): AuthPayload
+  }
+
+  type AuthPayload {
+    user: User
   }
 `;
 
