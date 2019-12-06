@@ -13,9 +13,9 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    logout: Boolean,
-    login(email: String!, password: String!): AuthPayload,
     signup(firstName: String!, lastName: String!, email: String!, password: String!): AuthPayload
+    login(email: String!, password: String!): AuthPayload,
+    logout: Boolean,
   }
 
   type AuthPayload {

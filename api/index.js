@@ -25,7 +25,7 @@ passport.serializeUser((user, done) => {
 })
 
 passport.deserializeUser((id, done) => {
-    const user = User.getUsers();
+    const users = User.getUsers();
     const matchingUser = users.find(user => user.id === id);
     done(null, matchingUser);
 })
